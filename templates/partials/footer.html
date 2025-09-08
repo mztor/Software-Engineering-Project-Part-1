@@ -1,4 +1,4 @@
-<!-- <link rel="stylesheet" href="static/css/style.css"> -->
+<link rel="stylesheet" href="static/css/style.css">
 
 <div class="container-fluid">
   <hr />
@@ -12,16 +12,13 @@
     <strong>Reward progress</strong>
     <small>{{ points }}/{{ threshold }} points</small>
   </div>
-
-<div class="progress" style="height: 22px;">
-  <div class="progress-bar "
-      role="progressbar"
-      style="width: {{ progress_percent }}%;"
-      aria-valuenow="{{ progress_percent|int }}"
-      aria-valuemin="0"
-      aria-valuemax="100">
+<div class="progress">
+  <div class="progress-bar w-{{ progress_percent|int }}">
     {{ progress_percent|int }}%
   </div>
+</div>
+
+
 </div>
 
   <div class="mt-2 text-muted">
